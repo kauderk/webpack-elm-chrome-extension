@@ -1,6 +1,6 @@
 # [Update]
 
-For learning how to create Chrome extension by Elm, I forked this repo and update it to Elm 0.19.
+For learning how to create Chrome extension by Elm, I forked this repo and updated it to Elm 0.19.
 
 # elm-chrome-extension
 
