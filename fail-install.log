@@ -1,0 +1,338 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+     C:  ...  system32  14:57  0s  cd "C:\Users\kauder\Documents\PC Installer\Github\playground\elm\elm-chrome-extension"
+       ...  elm-chrome-extension   master  ~1 -3 |  ~1  14:57  0.002s  ls
+
+
+    Directory: C:\Users\kauder\Documents\PC Installer\Github\playground\elm\elm-chrome-extension
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2/4/2024  11:57 AM                background
+d-----          2/4/2024  11:57 AM                common
+d-----          2/4/2024  11:57 AM                content
+d-----          2/4/2024  12:19 PM                elm-stuff
+d-----          2/4/2024  11:57 AM                popup
+d-----          2/4/2024  11:57 AM                src
+-a----          2/4/2024  11:57 AM             51 .gitignore
+-a----          2/4/2024  11:57 AM            153 elm-import.js
+-a----          2/4/2024  11:57 AM           1475 elm-upgrade-2019-03-30T101459.696Z.log
+-a----          2/4/2024  11:57 AM         111628 elm.js
+-a----          2/4/2024  11:57 AM            611 elm.json
+-a----          2/4/2024  11:57 AM            259 elmext.html
+-a----          2/4/2024  11:57 AM           1377 gulpfile.babel.js
+-a----          2/4/2024  12:28 PM            427 manifest.json
+-a----          2/4/2024  12:18 PM          60719 node-14-dependency-2024-02-01.log
+-a----          2/4/2024   2:39 PM            245 package.json
+-a----          2/4/2024  11:57 AM             52 popup.css
+-a----          2/4/2024  11:57 AM           1390 README.md
+
+
+       ...  elm-chrome-extension   master  ~1 -3 |  ~1  14:57  0.173s  npm install --force
+npm WARN using --force Recommended protections disabled.
+
+up to date, audited 1 package in 493ms
+
+found 0 vulnerabilities
+       ...  elm-chrome-extension   master  ~1 -3 |  ?1 ~1  14:58  1.518s  npm i babel-core babel-loader babel-preset-env clean-webpack-plugin copy-webpack-plugin css-loader elm elm-format elm-hot-loader elm-webpack-loader gulp gulp-load-plugins gulp-rename gulp-util html-webpack-plugin rimraf sass-loader style-loader url-loader webpack webpack-dev-server webpack-merge --force
+npm WARN using --force Recommended protections disabled.
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated cryptiles@2.0.5: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated sntp@1.0.9: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm WARN deprecated gulp-util@3.0.8: gulp-util is deprecated - replace it, following the guidelines at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
+npm WARN deprecated hoek@2.16.3: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
+npm WARN deprecated request@2.74.0: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated har-validator@2.0.6: this library is no longer supported
+npm WARN deprecated hawk@3.1.3: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm WARN deprecated tar@2.2.1: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm ERR! code 1
+npm ERR! path C:\Users\kauder\Documents\PC Installer\Github\playground\elm\elm-chrome-extension\node_modules\elm-webpack-loader\node_modules\elm
+npm ERR! command failed
+npm ERR! command C:\Windows\system32\cmd.exe /d /s /c node install.js
+npm ERR! Unfortunately, there are currently no Elm Platform binaries available for your operating system and architecture.
+npm ERR!
+npm ERR! If you would like to build Elm from source, there are instructions at https://github.com/elm-lang/elm-platform#build-from-source
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T19_58_51_655Z-debug-0.log
+       ...  elm-chrome-extension   master  ~1 -3 |  ?1 ~1  15:00  2:1.053s   ERROR  code .
+       ...  elm-chrome-extension   master  ~1 -3 |  ?1 ~1  15:03  1.372s  elm --version
+0.19.1
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:10  0.343s  npm install elm@latest-0.19.6
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for elm@latest-0.19.6.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T20_11_37_506Z-debug-0.log
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:11  2.282s   ERROR  npm install -g elm@latest-0.19.6
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for elm@latest-0.19.6.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T20_11_59_527Z-debug-0.log
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:12  1.489s   ERROR  npm install -g elm@latest-0.19.5
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for elm@latest-0.19.5.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T20_12_04_747Z-debug-0.log
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:12  1.535s   ERROR  npm install -g elm@latest-0.19.4
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for elm@latest-0.19.4.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T20_12_08_549Z-debug-0.log
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:12  1.462s   ERROR  npm install -g elm@latest-0.19.3
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for elm@latest-0.19.3.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T20_12_12_970Z-debug-0.log
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:12  1.491s   ERROR  npm install -g elm@latest-0.19.2
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for elm@latest-0.19.2.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T20_12_16_294Z-debug-0.log
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:12  1.415s   ERROR  npm install -g elm@latest-0.19.1
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 48 packages in 11s
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:12  12.351s  npm i babel-core babel-loader babel-preset-env clean-webpack-plugin copy-webpack-plugin css-loader elm elm-format elm-hot-loader elm-webpack-loader gulp gulp-load-plugins gulp-rename gulp-util html-webpack-plugin rimraf sass-loader style-loader url-loader webpack webpack-dev-server webpack-merge --force
+npm WARN using --force Recommended protections disabled.
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated cryptiles@2.0.5: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated sntp@1.0.9: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm WARN deprecated gulp-util@3.0.8: gulp-util is deprecated - replace it, following the guidelines at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
+npm WARN deprecated hoek@2.16.3: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
+npm WARN deprecated node-uuid@1.4.8: Use uuid module instead
+npm WARN deprecated request@2.74.0: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+npm WARN deprecated har-validator@2.0.6: this library is no longer supported
+npm WARN deprecated hawk@3.1.3: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
+npm WARN deprecated tar@2.2.1: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+npm WARN cleanup Failed to remove some directories [
+npm WARN cleanup   [
+npm WARN cleanup     'C:\\Users\\kauder\\Documents\\PC Installer\\Github\\playground\\elm\\elm-chrome-extension\\node_modules\\elm-webpack-loader',
+npm WARN cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\Users\kauder\Documents\PC Installer\Github\playground\elm\elm-chrome-extension\node_modules\elm-webpack-loader\test\fixtures\elm-stuff\packages\elm-lang\html\2.0.0'] {
+npm WARN cleanup       errno: -4048,
+npm WARN cleanup       code: 'EPERM',
+npm WARN cleanup       syscall: 'rmdir',
+npm WARN cleanup       path: 'C:\\Users\\kauder\\Documents\\PC Installer\\Github\\playground\\elm\\elm-chrome-extension\\node_modules\\elm-webpack-loader\\test\\fixtures\\elm-stuff\\packages\\elm-lang\\html\\2.0.0'
+npm WARN cleanup     }
+npm WARN cleanup   ]
+npm WARN cleanup ]
+npm ERR! code 1
+npm ERR! path C:\Users\kauder\Documents\PC Installer\Github\playground\elm\elm-chrome-extension\node_modules\elm-webpack-loader\node_modules\elm
+npm ERR! command failed
+npm ERR! command C:\Windows\system32\cmd.exe /d /s /c node install.js
+npm ERR! Unfortunately, there are currently no Elm Platform binaries available for your operating system and architecture.
+npm ERR!
+npm ERR! If you would like to build Elm from source, there are instructions at https://github.com/elm-lang/elm-platform#build-from-source
+
+npm ERR! A complete log of this run can be found in: C:\Users\kauder\AppData\Local\npm-cache\_logs\2024-02-04T20_13_49_512Z-debug-0.log
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:15  1:41.642s   ERROR  npm i babel-core babel-loader babel-preset-env clean-webpack-plugin copy-webpack-plugin css-loader gulp gulp-load-plugins gulp-rename gulp-util html-webpack-plugin rimraf sass-loader style-loader url-loader webpack webpack-dev-server webpack-merge --force
+npm WARN using --force Recommended protections disabled.
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated gulp-util@3.0.8: gulp-util is deprecated - replace it, following the guidelines at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
+npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+
+added 945 packages, and audited 946 packages in 24s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+9 high severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+       ...  elm-chrome-extension   master  ~2 -3 |  ?1 ~1  15:17  24.641s  npm i elm --force
+npm WARN using --force Recommended protections disabled.
+
+added 2 packages, and audited 948 packages in 4s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+9 high severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+       ...  elm-chrome-extension   master  ~3 -2 |  ~2  15:17  5.003s  npm i --force elm-webpack-loader
+npm WARN using --force Recommended protections disabled.
+
+added 13 packages, and audited 961 packages in 4s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+9 high severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+       ...  elm-chrome-extension   master  ~3 -2 |  ~2  15:18  5.222s  npm i --force elm-hot-loader
+npm WARN using --force Recommended protections disabled.
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: elm-hot-loader@0.5.4
+npm WARN Found: elm-webpack-loader@8.0.0
+npm WARN node_modules/elm-webpack-loader
+npm WARN   elm-webpack-loader@"^8.0.0" from the root project
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer elm-webpack-loader@"^4.1.1" from elm-hot-loader@0.5.4
+npm WARN node_modules/elm-hot-loader
+npm WARN   elm-hot-loader@"*" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: elm-webpack-loader@4.5.0
+npm WARN node_modules/elm-webpack-loader
+npm WARN   peer elm-webpack-loader@"^4.1.1" from elm-hot-loader@0.5.4
+npm WARN   node_modules/elm-hot-loader
+npm WARN     elm-hot-loader@"*" from the root project
+
+added 6 packages, and audited 967 packages in 3s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (9 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+       ...  elm-chrome-extension   master  ~3 -2 |  ~2  15:18  4.013s  npm i --force elm-format
+npm WARN using --force Recommended protections disabled.
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: elm-hot-loader@0.5.4
+npm WARN Found: elm-webpack-loader@8.0.0
+npm WARN node_modules/elm-webpack-loader
+npm WARN   elm-webpack-loader@"^8.0.0" from the root project
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer elm-webpack-loader@"^4.1.1" from elm-hot-loader@0.5.4
+npm WARN node_modules/elm-hot-loader
+npm WARN   elm-hot-loader@"^0.5.4" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: elm-webpack-loader@4.5.0
+npm WARN node_modules/elm-webpack-loader
+npm WARN   peer elm-webpack-loader@"^4.1.1" from elm-hot-loader@0.5.4
+npm WARN   node_modules/elm-hot-loader
+npm WARN     elm-hot-loader@"^0.5.4" from the root project
+
+added 2 packages, and audited 969 packages in 8s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (9 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+       ...  elm-chrome-extension   master  ~3 -2 |  ~2  15:19  8.531s  npm i --force elm-hot-webpack-loader
+npm WARN using --force Recommended protections disabled.
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: elm-hot-loader@0.5.4
+npm WARN Found: elm-webpack-loader@8.0.0
+npm WARN node_modules/elm-webpack-loader
+npm WARN   elm-webpack-loader@"^8.0.0" from the root project
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer elm-webpack-loader@"^4.1.1" from elm-hot-loader@0.5.4
+npm WARN node_modules/elm-hot-loader
+npm WARN   elm-hot-loader@"^0.5.4" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: elm-webpack-loader@4.5.0
+npm WARN node_modules/elm-webpack-loader
+npm WARN   peer elm-webpack-loader@"^4.1.1" from elm-hot-loader@0.5.4
+npm WARN   node_modules/elm-hot-loader
+npm WARN     elm-hot-loader@"^0.5.4" from the root project
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: elm-hot-webpack-loader@1.1.8
+npm WARN Found: elm-webpack-loader@8.0.0
+npm WARN node_modules/elm-webpack-loader
+npm WARN   elm-webpack-loader@"^8.0.0" from the root project
+npm WARN
+npm WARN Could not resolve dependency:
+npm WARN peer elm-webpack-loader@"^7.0.1" from elm-hot-webpack-loader@1.1.8
+npm WARN node_modules/elm-hot-webpack-loader
+npm WARN   elm-hot-webpack-loader@"*" from the root project
+npm WARN
+npm WARN Conflicting peer dependency: elm-webpack-loader@7.0.1
+npm WARN node_modules/elm-webpack-loader
+npm WARN   peer elm-webpack-loader@"^7.0.1" from elm-hot-webpack-loader@1.1.8
+npm WARN   node_modules/elm-hot-webpack-loader
+npm WARN     elm-hot-webpack-loader@"*" from the root project
+
+added 2 packages, and audited 971 packages in 4s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (9 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+       ...  elm-chrome-extension   master  ~3 -2 |  ~2  15:20  4.96s 
