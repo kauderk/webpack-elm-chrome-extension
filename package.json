@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "build": "./node_modules/.bin/gulp",
-    "watch": "./node_modules/.bin/gulp watch"
+    "watch": "./node_modules/.bin/gulp watch",
+    "preinstall": "node gulp-dependency.js"
+  },
+  "engines": {
+    "node": "^14.21.3"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
