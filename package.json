@@ -4,8 +4,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "gulp",
-    "watch": "gulp watch"
+    "build": "node ./gulpfile.babel.js"
   },
   "engines": {
     "node": "^20.11.0"
