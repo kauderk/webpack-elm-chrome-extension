@@ -1,5 +1,9 @@
+// @ts-check
 const path = require('path')
 
+/**
+ * @type {import('webpack').Configuration}
+ */
 module.exports = {
   module: {
     rules: [
@@ -18,7 +22,7 @@ module.exports = {
       {
         test: /\.elm$/,
         exclude: [/elm-stuff/, /node_modules/],
-        use: ['elm-hot-webpack-loader', 'elm-webpack-loader?verbose=true'],
+        use: ['elm-webpack-loader'],
       },
     ],
   },
